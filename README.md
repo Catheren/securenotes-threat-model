@@ -143,7 +143,7 @@ Three trust boundaries are defined:
 
 ### Level 0 — Context Diagram
 
-<img width="686" height="239" alt="level0_dfd" src="https://github.com/user-attachments/assets/771959c8-1958-454b-9182-e1ca34e5d64b" />
+<img width="1779" height="540" alt="Threat model - Page 1" src="https://github.com/user-attachments/assets/5865986f-e685-4450-8c0b-3f85e4d570ab" />
 
 
 The system accepts input from end users via browser and outputs password reset emails via an external email provider. All other data flows are internal.
