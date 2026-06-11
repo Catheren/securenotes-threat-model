@@ -91,10 +91,10 @@ STRIDE categories are applied based on element type:
 
 | Element type | S | T | R | I | D | E |
 |-------------|---|---|---|---|---|---|
-| External entity (browser, email provider) | ✓ | ✓ | ✓ | | | |
-| Process | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Data store | | ✓ | ✓ | ✓ | ✓ | |
-| Data flow | ✓ | ✓ | | ✓ | ✓ | |
+| External entity (Browser, Email provider) | ✓ | ✓ | ✓ | | | |
+| Process (Web Server, Auth, Notes API) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Data store (SQL Database)| | ✓ | ✓ | ✓ | ✓ | |
+| Data flow (API calls, DB queries, HTTPS)| ✓ | ✓ | | ✓ | ✓ | |
 
 ### Risk Scoring: DREAD
 
