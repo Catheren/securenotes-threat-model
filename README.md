@@ -91,7 +91,7 @@ STRIDE categories are applied based on element type:
 
 | Element type | S | T | R | I | D | E |
 |-------------|---|---|---|---|---|---|
-| External entity | ✓ | ✓ | ✓ | | | |
+| External entity (browser, email provider) | ✓ | ✓ | ✓ | | | |
 | Process | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Data store | | ✓ | ✓ | ✓ | ✓ | |
 | Data flow | ✓ | ✓ | | ✓ | ✓ | |
