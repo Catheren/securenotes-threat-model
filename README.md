@@ -143,58 +143,15 @@ Three trust boundaries are defined:
 
 ### Level 0 — Context Diagram
 
-```
 <img width="686" height="239" alt="level0_dfd" src="https://github.com/user-attachments/assets/771959c8-1958-454b-9182-e1ca34e5d64b" />
 
-
-```
 
 The system accepts input from end users via browser and outputs password reset emails via an external email provider. All other data flows are internal.
 
 ### Level 1 — Data Flow Diagram
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│ TB1 — Internet (untrusted)                                      │
-│                                                                 │
-│  [User Browser] ──HTTPS request──► [CDN / Load Balancer]       │
-│  [User Browser] ◄─HTTPS response── [CDN / Load Balancer]       │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-                              │ HTTP (internal)
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│ TB2 — DMZ                                                       │
-│                                                                 │
-│                      [Load Balancer]                            │
-│                      TLS termination                            │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-                              │ HTTP (internal)
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│ TB3 — Private Network (trusted)                                 │
-│                                                                 │
-│                      [Web Server]                               │
-│                  Auth check / routing                           │
-│                    /           \                                │
-│          auth request           notes request                   │
-│               /                       \                         │
-│     [Auth Service]              [Notes API]                     │
-│   Login, JWT, sessions         CRUD, ownership check            │
-│          |    \                      |                          │
-│    user lookup \               note read/write                  │
-│          |      reset token          |                          │
-│          |           \               |                          │
-│  ╔═══════════════════════════════╗   |                          │
-│  ║  PostgreSQL Database          ║◄──┘                          │
-│  ║  users + notes + reset_tokens ║                              │
-│  ╚═══════════════════════════════╝                              │
-│                    \                                            │
-│                     └──reset token──► [Email Service] ─────────┼──► Internet
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+<img width="1844" height="1780" alt="Threat model - Page 2" src="https://github.com/user-attachments/assets/cf3bf668-ff9b-4cfa-8638-49798dd29889" />
+
 
 ### Data Classification
 
