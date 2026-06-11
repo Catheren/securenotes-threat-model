@@ -144,11 +144,9 @@ Three trust boundaries are defined:
 ### Level 0 — Context Diagram
 
 ```
-                    ┌─────────────────────────────┐
-                    │                             │
-    [User] ────────►│       SecureNotes App       │────────► [Email Provider]
-                    │                             │
-                    └─────────────────────────────┘
+<img width="686" height="239" alt="level0_dfd" src="https://github.com/user-attachments/assets/771959c8-1958-454b-9182-e1ca34e5d64b" />
+
+
 ```
 
 The system accepts input from end users via browser and outputs password reset emails via an external email provider. All other data flows are internal.
