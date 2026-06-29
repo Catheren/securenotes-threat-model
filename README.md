@@ -1,4 +1,21 @@
 # Threat Model: SecureNotes Web Application
+[![Methodology](https://img.shields.io/badge/Methodology-STRIDE_per_element-7B42BC)](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+[![Risk Scoring](https://img.shields.io/badge/Risk_Scoring-DREAD-E24B4A)](https://owasp.org/www-community/OWASP_Risk_Rating_Methodology)
+[![Threats](https://img.shields.io/badge/Threats_Identified-46-FF9900)](.)
+[![High Risk](https://img.shields.io/badge/High_Risk-26-E24B4A)](.)
+[![Compliance](https://img.shields.io/badge/Compliance-PIPEDA_%2F_Bill_C--27-0F6E56)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
+
+## What this demonstrates
+
+| Skill | Detail |
+|---|---|
+| Threat modeling methodology | STRIDE per element applied to a Level 1 DFD across 7 components |
+| Risk scoring | DREAD framework — 5-dimension scoring across 46 identified threats |
+| Security architecture analysis | Trust boundary definition, data classification, DFD at Level 0 and Level 1 |
+| AppSec coverage | OWASP Top 10 alignment — IDOR, SQLi, XSS, broken auth, security logging |
+| Mitigation design | Prioritized remediation register with specific controls mapped to each threat |
+| Regulatory awareness | PIPEDA and Bill C-27 privacy considerations, LINDDUN recommendation |
+| Framework breadth | STRIDE, DREAD, PASTA, LINDDUN, Attack Trees — comparative methodology notes |
 **Methodology:** STRIDE per element, DREAD risk scoring  
 
 ---
